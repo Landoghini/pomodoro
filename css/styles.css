@@ -41,10 +41,12 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+/* Start */
 html, body {
     height: 100%;
     background-color:grey;
+    font-family: Oswald;
+    font-weight: bold;
 }
 
 div {
@@ -52,22 +54,77 @@ div {
 }
 
 .flex-container {
-    margin: auto;
     position:absolute;
     left : 50%;
     bottom: 50%;
+    top: 25%;
     transform: translateX(-50%);
 }
 
-div:nth-child(2) {
+.set-times {
     height: 95px;
     background-color: black;
     margin-bottom: 15px;
 }
 
-div:nth-child(3) {
+.countdown {
     height: 230px;
     background-color: black;
+}
+.session{
+    width: 48%;
+    height: 56px;
+    float: left;
+}
+.break{
+    width: 48%;
+    height: 56px;
+    float: right;
+}
+.decrease-session{
+    width: 47px;
+    height: 20px;
+    float: left;
+    padding: 6px 12px;
+    text-align: center;
+}
+.increase-session{
+     width: 47px;
+    height: 20px;
+    float: left;
+    padding: 6px 12px;
+    text-align: center;
+}
+.session-amount{
+    float: left;
+    width: 44px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+/* Break */
+.decrease-break{
+    width: 47px;
+    height: 20px;
+    float: right;
+    padding: 6px 12px;
+    text-align: center;
+}
+.break-session{
+     width: 47px;
+    height: 20px;
+    float: right;
+    padding: 6px 12px;
+    text-align: center;
+}
+.break-amount{
+    float: right;
+    width: 44px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
 }
 
 h1{
@@ -79,3 +136,86 @@ h1{
     width:100%;
     text-align: center;
 }
+h3{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+i{
+    color: white;
+}
+span{
+    color: white;
+    font-size: 25px;
+}
+
+/* Bottom Section */
+.start-countdown{
+    width: 200px;
+    height: 56px;
+    float: left;
+    padding-left:15px;
+    padding-right: 15px;
+    text-align: center;
+    display: block;
+}
+.refresh{
+    width: 180px;
+    height: 56px;
+    float: right;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    display: block;
+}
+.session-main{
+    width: 420px;
+    height: 33px;
+    padding: 0px 15px;
+    float: left;
+}
+.s-main{
+    text-align: center;
+    display: block;
+    width: 420px;
+    height: 33px;
+    margin:0 0 10px 0;
+    font-size: 30px;
+    color:white;
+}
+.time-remaining{
+    float: left;
+    color: white;
+    text-align: center;
+    height: 80;
+    font-family: Orbitron;
+    font-size: 4em;
+}
+.pause{
+    float: left;
+    width: 50%;
+    height: 56px;
+    color: white;
+    text-align: center;
+}
+.stop{
+    float: left;
+    width: 50%; 
+    height: 56px;
+    color: white;
+    text-align: center;
+}
+i.fa-play{
+    padding-top: 20px;
+}
+i.fa-refresh{
+    padding-top: 20px;
+}
+i.fa-pause{
+    padding-top: 20px;
+}
+i.fa-stop{
+    padding-top: 20px;

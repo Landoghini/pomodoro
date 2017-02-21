@@ -3,14 +3,31 @@
   <head>
     <title>Pomodoro</title>
     <link type="text/css" rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    
+    <script src="https://use.fontawesome.com/6f6777b5b0.js"></script>
   </head>
   <body>
     <div class="flex-container">
       <h1>Pomodoro Clock</h1>
-      <div></div>
-      <div></div>
+      <div class= "set-times">
+        <div class="session"><h3>Session</h3></div>
+        <div class="break"><h3>Break</h3></div>
+        <!-- Session -->
+          <div class="decrease-session"><i class="fa fa-angle-down fa-lg" aria-hidden="true"></i></div>
+          <div class="session-amount"><span>25</span></div>
+          <div class="increase-session"><i class="fa fa-angle-up fa-lg" aria-hidden="true"></i></div>
+        <!-- Break -->
+          <div class="decrease-break"><i class="fa fa-angle-down fa-lg" aria-hidden="true"></i></div>
+          <div class="break-amount"><span>5</span></div>
+          <div class="break-session"><i class="fa fa-angle-up fa-lg" aria-hidden="true"></i></div>
+       </div>
+      <div class="countdown">
+        <div class="start-countdown"><i class="fa fa-play fa-2x" aria-hidden="true"></i></div>
+        <div class="refresh"><i class="fa fa-refresh fa-2x" aria-hidden="true"></i></div>
+        <div class="session-main"><h2 class="s-main">Session</h2></div>
+        <div class="time-remaining">25:00</div>
+        <div class="pause"><i class="fa fa-pause fa-2x" aria-hidden="true"></i></div>
+        <div class="stop"><i class="fa fa-stop fa-2x" aria-hidden="true"></i></div>
+      </div>
     </div>
     <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
